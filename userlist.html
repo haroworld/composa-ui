@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/main.css">
+        <title>Manage Landing Page</title>
+    </head>
+    <body>
+        <!--navbar-->
+        <nav class="relative container mx-auto p-6 bg-lightBlue">
+            <div class="flex items-center justify-between">
+                <div class="pt-2 ">
+                    <a href="index.html" class="hover:text-blue font-bold">COMPOSER</a> 
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="profile.html" class="hover:text-white">Profile</a>
+                    <a href="#" class="hover:text-white">Search-user</a>
+                    <a href="#" class="hover:text-white">Logout</a>
+                    <a href="#" class="hover:text-white">Login</a>
+                </div>
+                <!--Hambuger Icon-->
+                <button id="menu-btn" class="block hamburger md:hidden focus:ouline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+            <!--Mobile menu-->
+            <div class="md:hidden">
+                <div id="menu" class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w:auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="profile.html" class="hover:text-lightBlue">Profile</a>
+                    <a href="#" class="hover:text-lightBlue">Search-user</a>
+                    <a href="#" class="hover:text-lightBlue">Logout</a>
+                    <a href="#" class="hover:text-lightBlue">Login</a>
+                </div>
+            </div>
+        </nav>
+        <section id="userlists">
+            <div class="container mx-auto px-6 flex justify-center mt-10">
+                <div class="flex flex-col px-3 w-11/12 space-y-2 md:w-1/2 border-2 border-darkBlue py-3">
+                    <form class="flex flex-row items-center w-full space-x-3">
+                        <div class="p-2 border-2 border-lightBlue w-full flex flex-row mb-3">
+                            <input class="w-full focus:outline-none border-none focus-none" type="search" placeholder="Search For Profile">
+                        </div>
+                        <button type="submit" class="p-2 mb-3 border-2 border-lightBlue bg-darkBlue text-white rounded-lg">Search</button>
+                    </form>
+
+                    <!--user 1-->
+                    <div class="flex flex-row space-x-3 p-3 bg-lightBlue rounded-lg mb-3">
+                        <div class="rounded-full w-10 h-10 border-2 border-lightBlue">
+                            <img src="./images/IMG_9505-removebg-preview.png" class="rounded-full h-full">
+                        </div>
+                        <div class="flex flex-col space-x-3">
+                            <h4 class="font-bold">Ganiu Adewale</h4>
+                            <div class="flex flex-row space-x-6 justify-center">
+                                <form>
+                                    <button type="submit">Accept</button>
+                                </form>
+                                <form>
+                                    <button type="submit">Delete</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--user 2-->
+                    <div class="flex flex-row space-x-3 p-3 bg-lightBlue rounded-lg mb-3">
+                        <div class="rounded-full w-10 h-10 border-2 border-lightBlue">
+                            <img src="./images/IMG_9505-removebg-preview.png" class="rounded-full h-full">
+                        </div>
+                        <div class="flex flex-col space-x-3">
+                            <h4 class="font-bold">Ganiu Adewale</h4>
+                            <div class="flex flex-row space-x-6 justify-center">
+                                <form>
+                                    <button type="submit">Accept</button>
+                                </form>
+                                <form>
+                                    <button type="submit">Delete</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

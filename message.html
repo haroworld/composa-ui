@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/main.css">
+        <title>Manage Landing Page</title>
+    </head>
+    <body>
+        <!--navbar-->
+        <nav class="relative container mx-auto p-6 bg-lightBlue">
+            <div class="flex items-center justify-between">
+                <div class="pt-2 ">
+                    <a href="index.html" class="hover:text-blue font-bold">COMPOSER</a> 
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="profile.html" class="hover:text-white">Profile</a>
+                    <a href="#" class="hover:text-white">Search-user</a>
+                    <a href="#" class="hover:text-white">Logout</a>
+                    <a href="#" class="hover:text-white">Login</a>
+                </div>
+                <!--Hambuger Icon-->
+                <button id="menu-btn" class="block hamburger md:hidden focus:ouline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+            <!--Mobile menu-->
+            <div class="md:hidden">
+                <div id="menu" class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w:auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="profile.html" class="hover:text-lightBlue">Profile</a>
+                    <a href="#" class="hover:text-lightBlue">Search-user</a>
+                    <a href="#" class="hover:text-lightBlue">Logout</a>
+                    <a href="#" class="hover:text-lightBlue">Login</a>
+                </div>
+            </div>
+        </nav>
+        <!--Message section-->
+        <section id="message">
+            <div class="container flex justify-center mx-auto px-6 mt-10">
+                <!--chat div-->
+                <div class="flex flex-col w-11/12 md:w-4/6 mt-10">
+                    <div class="flex flex-col md:flex-row spacex-3">
+                        <!--chat body-->
+                        <div class="flex flex-col w-full md:w-3/4">
+                            <div id="chat-div" class="flex flex-col-reverse h-72 bg-lightBlue border-2 w-full">
+                                
+                                <!--Sanni Third message-->
+                                <div class="flex flex-row space-x-3 p-3 w-4/5">
+                                    <div class="flex flex-col pt-2">
+                                        <div class="rounded-full w-10 h-10 border-2 border-lightBlue">
+                                            <img src="./images/IMG_9505-removebg-preview.png" class="rounded-full h-full">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full">
+                                        <h4 class="font-bold">Sanni Fareedah</h4>
+                                        <div class="flex flex-col bg-darkBlue p-2 rounded-lg mr-auto">
+                                            <p class="text-white text-sm">Thanks</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Adegbola Third Message-->
+                                <div class="flex flex-row space-x-3 p-3 self-end w-4/5">
+
+                                    <div class="flex flex-col w-full">
+                                        <h4 class="font-bold ml-auto">Adegbola Bushro</h4>
+                                        <div class="flex flex-col bg-darkBlue p-2 rounded-lg ml-auto">
+                                            <p class="text-white text-sm">It's Nice</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col pt-2">
+                                        <div class="rounded-full w-10 h-10 border-2 border-lightBlue">
+                                            <img src="./images/FB_IMG_16168521304843157.jpg" class="rounded-full h-full">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Sanni second message-->
+                                <div class="flex flex-row space-x-3 p-3 w-4/5">
+                                    <div class="flex flex-col pt-2">
+                                        <div class="rounded-full w-10 h-10 border-2 border-lightBlue">
+                                            <img src="./images/IMG_9505-removebg-preview.png" class="rounded-full h-full">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full">
+                                        <h4 class="font-bold">Sanni Fareedah</h4>
+                                        <div class="flex flex-col bg-darkBlue p-2 rounded-lg mr-auto">
+                                            <p class="text-white text-sm">This is my picture</p>
+                                            <img src="./images/IMG_9505-removebg-preview.png" class="rounded-lg h-full">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Sanni First message-->
+                                <div class="flex flex-row space-x-3 p-3 w-4/5">
+                                    <div class="flex flex-col pt-2">
+                                        <div class="rounded-full w-10 h-10 border-2 border-lightBlue">
+                                            <img src="./images/IMG_9505-removebg-preview.png" class="rounded-full h-full">
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col w-full">
+                                        <h4 class="font-bold">Sanni Fareedah</h4>
+                                        <div class="flex flex-col bg-darkBlue p-2 rounded-lg mr-auto">
+                                            <p class="text-white text-sm">I'm good</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Adegbola second Message-->
+                                <div class="flex flex-row space-x-3 p-3 self-end w-4/5">
+
+                                    <div class="flex flex-col w-full">
+                                        <h4 class="font-bold ml-auto">Adegbola Bushro</h4>
+                                        <div class="flex flex-col bg-darkBlue p-2 rounded-lg ml-auto">
+                                            <p class="text-white text-sm">How have you been</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col pt-2">
+                                        <div class="rounded-full w-10 h-10 border-2 border-lightBlue">
+                                            <img src="./images/FB_IMG_16168521304843157.jpg" class="rounded-full h-full">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--Adegbola first Message-->
+                                <div class="flex flex-row space-x-3 p-3 self-end w-4/5">
+
+                                    <div class="flex flex-col w-full">
+                                        <h4 class="font-bold ml-auto">Adegbola Bushro</h4>
+                                        <div class="flex flex-col bg-darkBlue p-2 rounded-lg ml-auto">
+                                            <p class="text-white text-sm">Hello dear</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex flex-col pt-2">
+                                        <div class="rounded-full w-10 h-10 border-2 border-lightBlue">
+                                            <img src="./images/FB_IMG_16168521304843157.jpg" class="rounded-full h-full">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Chat form-->
+                            <div class="flex flex-col space-x-3 bg-darkBlue p-3">
+                                <form class="flex flex-row">
+                                    <input class="w-full bg-darkBlue focus:outline-none text-white" type="text" placeholder="Enter Message" >
+                                    <button class="px-2 bg-lightBlue text-white rounded-lg">Send</button>
+                                </form>
+                            </div>
+                        </div>
+                        <!--online users-->
+                        <div class="hidden md:flex flex-col border-2 border-darkBlue">
+                            <!--first user-->
+                            <div class="flex flex-row space-x-3 py-2 px-3 my-2 bg-darkBlue">
+                                <div class="flex flex-col pt-2">
+                                    <div class="rounded-full w-10 h-10 border-2 border-lightGreen">
+                                        <img src="./images/IMG_9505-removebg-preview.png" class="rounded-full h-full">
+                                    </div>
+                                </div>
+                                <div class="flex flex-col w-full">
+                                    <h4 class="font-bold text-sm">John Doe</h4>
+                                    <div class="flex flex-col">
+                                        <a class="text-lightBlue" href="#">Message</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--second user-->
+                            <div class="flex flex-row space-x-3 py-2 px-3 my-2 bg-darkBlue">
+                                <div class="flex flex-col pt-2">
+                                    <div class="rounded-full w-10 h-10 border-2 border-lightGreen">
+                                        <img src="./images/IMG_9505-removebg-preview.png" class="rounded-full h-full">
+                                    </div>
+                                </div>
+                                <div class="flex flex-col w-full">
+                                    <h4 class="font-bold text-sm">Sanni Jamiu</h4>
+                                    <div class="flex flex-col">
+                                        <a class="text-lightBlue" href="#">Message</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/main.css">
+        <title>Manage Landing Page</title>
+    </head>
+    <body>
+        <!--navbar-->
+        <nav class="relative container mx-auto p-6 bg-lightBlue">
+            <div class="flex items-center justify-between">
+                <div class="pt-2 ">
+                    <a href="index.html" class="hover:text-blue font-bold">COMPOSER</a> 
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="profile.html" class="hover:text-white">Profile</a>
+                    <a href="#" class="hover:text-white">Search-user</a>
+                    <a href="#" class="hover:text-white">Logout</a>
+                    <a href="#" class="hover:text-white">Login</a>
+                </div>
+                <!--Hambuger Icon-->
+                <button id="menu-btn" class="block hamburger md:hidden focus:ouline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+            <!--Mobile menu-->
+            <div class="md:hidden">
+                <div id="menu" class="flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w:auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="profile.html" class="hover:text-lightBlue">Profile</a>
+                    <a href="#" class="hover:text-lightBlue">Search-user</a>
+                    <a href="#" class="hover:text-lightBlue">Logout</a>
+                    <a href="#" class="hover:text-lightBlue">Login</a>
+                </div>
+            </div>
+        </nav>
+        <!--Account Section-->
+        <section id="account">
+            <div class="container flex flex-row justify-center mx-auto mt-5">
+                <!--account info & posts-->
+                <div class="flex flex-col p-3 mt-10 border-2 border-darkBlue w-3/4 md:w-1/2">
+                    <div class="flex flex-col bg-darkBlue">
+                        <div class="flex mt-2 mx-2">
+                            <a class="rounded-full px-2 text-white" href="#">Back</a>
+                        </div>
+                        <div class="flex flex-col relative mt-5 h-48 mb-12 md:mb-16">
+                            <div class="border-b-2 border-darkBlue static bottom-0 w-full h-full">
+                                <img class="w-full h-full" src="./images/IMG_9505-removebg-preview.png">
+                            </div>
+                            <div class="flex flex-row absolute w-24 h-24 left-28 top-36 md:w-32 md:h-32 md:top-32 md:left-44">
+                                <img class="rounded-full w-full h-full border-2" src="./images/IMG_9505-removebg-preview.png">
+                            </div>
+                        </div>
+                        <!--Profile Info-->
+                        <div class="flex flex-col items-center">
+                            <h4 class="font-bold">Sanni Fareedah</h4>
+                            <h4>Reedah</h4>
+                            <p>Email: reedah@gmail.com</p>
+                            <p>Lagos,Nigeria</p>
+                            <div class="flex flex-row mt-2">
+                                <span>Online</span>
+                                <div class="rounded-full w-2 h-2 bg-lightGreen"></div>
+                            </div>
+                            <form>
+                                <button class="text-lightBlue">Add Friend</button>
+                            </form>
+                            <div class="flex flex-col items-center my-5">
+                                <h4 class="font-bold">Bio</h4>
+                                <p class="text-center">I'm cool and gentle, Backend Developer, Love computer science</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--User Posts-->
+                    <div class="flex flex-col">
+                        <h4 class="text-center font-bold">POSTS</h4>
+                    <!--Post Body-->
+                    <div class="flex flex-row mb-5 w-full p-3 border-b border-black">
+                        <div class="flex flex-col space-x-6 pt-5">
+                            <div class="rounded-full w-10 h-10 border-2 border-lightBlue"><img src="./images/FB_IMG_16168521304843157.jpg" class="rounded-full h-full"></div>
+                        </div>
+                        <div class="flex flex-col mt-3">
+                            <div class="flex flex-col px-2">
+                                <div class="flex flex-row space-x-6">
+                                    <h4 class="font-bold">Haroworld</h4>
+                                    <span>Hussayn Abdulrahman</span>
+                                </div>
+                                <p class="font-light text-xs">Posted 1 hour ago</p>
+                            </div>
+                            <div class="px-2">
+                                <a href="single-post.html"><p>Leonel Messi wins Another Balon D'or</p></a>
+                                <img class="rounded-lg w-1/2" src="./images/messi.jpg">
+                            </div>
+                            <div class="p-2 w-full mt-2">
+                                <!--Comment form-->
+                                <form class="flex flex-col mx-auto">
+                                    <div class="mb-2">
+                                        <input class="p-3 text-xs md:text-sm rounded-lg w-full border-2 border-lightBlue focus:outline-none focus:border-lightBlue" type="text" placeholder="Enter comment">
+                                    </div>
+                                    <div class="mb-2">
+                                        <button class="border-2 border-lightBlue px-2 rounded-full" type="submit"><span class="text-xs">Comments | 100</span></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="flex flex-row justify-evenly space-x-3">
+                                <a href="repost.html" class="text-lightBlue"><span>Repost | 20</span></a>
+                                <form>
+                                    <button class="text-lightBlue"><span>Like | 13</span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Post Body-->
+                    <div class="flex flex-row mb-5 w-full p-3 border-b border-black">
+                        <div class="flex flex-col pt-5">
+                            <div class="rounded-full w-10 h-10 border-2 border-lightBlue"><img src="./images/IMG_9505-removebg-preview.png" class="rounded-full h-full"></div>
+                        </div>
+                        <div class="flex flex-col mt-3">
+                            <div class="flex flex-col px-2">
+                                <div class="flex flex-row space-x-6">
+                                    <h4 class="font-bold">Reedah</h4>
+                                    <span>Sanni Fareedah</span>
+                                </div>
+                                <p class="font-light text-xs">Repost Hussayn Abdulrahman post 1 hour ago</p>
+                            </div>
+                            <div class="px-2 mb-5">
+                               <a href="single-post.html"><p>Well Deserved</p></a>
+                            </div>
+                            <div class="flex flex-row p-2 bg-lightBlue rounded-lg w-4/5">
+                                <div class="flex flex-row space-x-6">
+                                    <div class="rounded-full w-10 h-10 border-2 border-lightBlue"><img src="./images/FB_IMG_16168521304843157.jpg" class="rounded-full h-full"></div>
+                                </div>
+                                <div class="flex flex-col">
+                                    <div class="flex-flex-col">
+                                        <div class="flex flex-row">
+                                            <h4 class="font-bold">Haroworld</h4>
+                                        </div>
+                                        <p class="font-light text-xs">Posted on 1 hour ago</p>
+                                    </div>
+                                    
+                                    <div class="flex flex-col">
+                                        <p>Leonel Messi wins Another Balon D'or</p>
+                                        <img class="rounded-lg w-1/2" src="./images/messi.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-2 w-full mt-2">
+                                <!--Comment form-->
+                                <form class="flex flex-col mx-auto">
+                                    <div class="mb-2">
+                                        <input class="p-3 text-xs md:text-sm rounded-lg w-full border-2 border-lightBlue focus:outline-none focus:border-lightBlue" type="text" placeholder="Enter comment">
+                                    </div>
+                                    <div class="mb-2">
+                                        <button class="border-2 border-lightBlue px-2 rounded-full" type="submit"><span class="text-xs">Comments | 100</span></button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="flex flex-row justify-evenly space-x-3">
+                                <a href="repost.html" class="text-lightBlue"><span>Repost | 20</span></a>
+                                <form>
+                                    <button class="text-lightBlue"><span>Like | 13</span></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!--Friends-->
+                <div class="hidden md:flex flex-col p-3 mt-7">
+                    <!--Friends-->
+                    <div class="border-2 border-darkBlue py-3 px-5 mb-3 ">
+                        <h4>Friends</h4>
+                    </div>
+                    <!--friend block and unfriend Form-->
+                    <div class="flex flex-row space-x-3 p-3 bg-lightBlue rounded-lg mb-3">
+                        <div class="rounded-full w-10 h-10 border-2 border-lightBlue">
+                            <img src="./images/IMG_9505-removebg-preview.png" class="rounded-full h-full">
+                        </div>
+                        <div class="flex flex-col space-x-3">
+                            <h4 class="font-bold">Ganiu Adewale</h4>
+                        </div>
+                    </div>
+                
+                    <!--friend block and unfriend Form-->
+                    <div class="flex flex-row space-x-3 p-3 bg-lightBlue rounded-lg mb-3">
+                        <div class="rounded-full w-10 h-10 border-2 border-lightBlue">
+                            <img src="./images/IMG_9505-removebg-preview.png" class="rounded-full h-full">
+                        </div>
+                        <div class="flex flex-col space-x-3">
+                            <h4 class="font-bold">Wasiu Ganiu</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

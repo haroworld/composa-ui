@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/main.css">
+        <title>Manage Landing Page</title>
+    </head>
+    <body>
+        <!--navbar-->
+        <nav class="relative container mx-auto p-6 bg-lightBlue">
+            <div class="flex items-center justify-between">
+                <div class="pt-2 ">
+                    <a href="index.html" class="hover:text-blue font-bold">COMPOSER</a> 
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="profile.html" class="hover:text-white">Profile</a>
+                    <a href="#" class="hover:text-white">Search-user</a>
+                    <a href="#" class="hover:text-white">Logout</a>
+                    <a href="#" class="hover:text-white">Login</a>
+                </div>
+                <!--Hambuger Icon-->
+                <button id="menu-btn" class="block hamburger md:hidden focus:ouline-none">
+                    <span class="hamburger-top"></span>
+                    <span class="hamburger-middle"></span>
+                    <span class="hamburger-bottom"></span>
+                </button>
+            </div>
+            <!--Mobile menu-->
+            <div class="md:hidden">
+                <div id="menu" class="absolute flex-col items-center self-end hidden py-8 mt-10 space-y-6 font-bold bg-white sm:w:auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <a href="profile.html" class="hover:text-lightBlue">Profile</a>
+                    <a href="#" class="hover:text-lightBlue">Search-user</a>
+                    <a href="#" class="hover:text-lightBlue">Logout</a>
+                    <a href="#" class="hover:text-lightBlue">Login</a>
+                </div>
+            </div>
+        </nav>
+        <!--Section SinglePost-->
+        <div class="container flex justify-center mx-auto px-6 mt-10">
+            <div class="flex flex-col px-6 py-3 bg-lightBlue w-4/5 rounded-lg md:w-1/2">
+                <!--Post Body-->
+                <div class="flex flex-row mb-5 w-full p-3 border-b border-black">
+                    <div class="flex flex-col space-x-6 pt-5">
+                        <div class="rounded-full w-10 h-10 border-2 border-lightBlue"><img src="./images/FB_IMG_16168521304843157.jpg" class="rounded-full h-full"></div>
+                    </div>
+                    <div class="flex flex-col mt-3">
+                        <div class="flex flex-col px-2">
+                            <div class="flex flex-row space-x-6">
+                                <h4 class="font-bold">Haroworld</h4>
+                                <span>Hussayn Abdulrahman</span>
+                            </div>
+                            <p class="font-light text-xs">Posted 1 hour ago</p>
+                        </div>
+                        <div class="px-2">
+                            <a href="single-post.html"><p>Leonel Messi wins Another Balon D'or</p></a>
+                            <img class="rounded-lg w-1/2" src="./images/messi.jpg">
+                        </div>
+                        <div class="p-2 w-full mt-2">
+                            <!--Comment form-->
+                            <form class="flex flex-col mx-auto">
+                                <div class="mb-2">
+                                    <input class="p-3 text-xs md:text-sm rounded-lg w-full border-2 border-lightBlue focus:outline-none focus:border-lightBlue" type="text" placeholder="Enter comment">
+                                </div>
+                                <div class="mb-2">
+                                    <button class="border-2 border-lightBlue px-2 rounded-full" type="submit"><span class="text-xs">Comments | 100</span></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="flex flex-row justify-evenly space-x-3">
+                            <a href="repost.html" class="text-darkBlue"><span>Repost | 20</span></a>
+                            <form>
+                                <button class="text-darkBlue"><span>Like | 13</span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--Comments-->
+                <div class="flex justify-center mt-10">
+                    <h4 class="font-bold">Comments</h4>
+                </div>
+                <!--First comment-->
+                <div class="flex flex-row space-y-3 my-2 bg-white p-2 rounded-lg">
+                    <div class="flex flex-col pt-3">
+                        <div class="rounded-full w-10 h-10 border-2 border-lightBlue"><img src="./images/FB_IMG_16168521304843157.jpg" class="rounded-full h-full"></div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex flex-col px-2">
+                            <div class="flex flex-row">
+                                <h4 class="font-bold">Haroworld</h4>
+                            </div>
+                            <p class="font-light text-xs">comment an hour ago</p>
+                        </div>
+                        <div class="px-2 flex flex-col">
+                            <p class="text-xs">Keep Cooking</p>
+                        </div>
+                    </div>
+                </div>
+                <!--Second Comment-->
+                <div class="flex flex-row space-y-3 my-2 bg-white p-2 rounded-lg">
+                    <div class="flex flex-col pt-3">
+                        <div class="rounded-full w-10 h-10 border-2 border-lightBlue"><img src="./images/FB_IMG_16168521304843157.jpg" class="rounded-full h-full"></div>
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex flex-col px-2">
+                            <div class="flex flex-row">
+                                <h4 class="font-bold">Reedah</h4>
+                            </div>
+                            <p class="font-light text-xs">comment an hour ago</p>
+                        </div>
+                        <div class="px-2 flex flex-col">
+                            <p class="text-xs">Agba ni Messi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
